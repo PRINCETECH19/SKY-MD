@@ -1,5 +1,5 @@
 const events = process.env.EVENTS || 'false';
-const botname = process.env.BOTNAME || 'KEITH-MD';
+const botname = process.env.BOTNAME || 'SKY-MD';
 
 const getContextInfo = (m) => {
     return {
@@ -8,7 +8,7 @@ const getContextInfo = (m) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363266249040649@newsletter',
-            newsletterName: 'Keith Support',
+            newsletterName: 'sky Support',
             serverMessageId: 143,
         },
     };
@@ -54,7 +54,7 @@ ${desc}
                         contextInfo: getContextInfo({ sender: Myself }),
                     });
                 }
-            } else if (keizzah.action === "remove") {
+            } else if (sky.action === "remove") {
                 const GoodbyeText = `Goodbye @${userName}. 😔
 Another member has left the group.
 Time left: *${timeLeft}*
@@ -71,7 +71,7 @@ The group now has ${groupMembersCount} members. 😭`;
             } else if (keizzah.action === "demote" && events === 'true') {
                 await client.sendMessage(keizzah.id, {
                     text: `@${keizzah.author.split("@")[0]} has demoted @${keizzah.participants[0].split("@")[0]} from admin. 👀`,
-                    mentions: [keizzah.author, keizzah.participants[0]],
+                    mentions: [keizzah.author, sky.participants[0]],
                     contextInfo: getContextInfo({ sender: Myself }),
                 });
             } else if (keizzah.action === "promote" && events === 'true') {
