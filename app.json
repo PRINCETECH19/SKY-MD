@@ -1,10 +1,10 @@
 {
-  "name": "KEITH-MD",
+  "name": "SKY-MD",
   "description": "This is a simple whatsapp bot built with nodejs to make your WhatsApp enjoyable ",
   "keywords": [
     "bot",
     "whatsapp",
-    "keith",
+    "SKY",
     "whatsapp-stickers",
     "anime",
     "whatsapp-bot",
@@ -14,13 +14,13 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://github.com/Keithkeizzah/KEITH-MD#readme",
-  "repository": "https://github.com/Keithkeizzah/KEITH-MD.git",
+  "website": "https://github.com/PRINCETECH19/SKY-MD#readme",
+  "repository": "https://github.com/PRINCETECH19/SKY-MD.git",
   "logo": "https://i.imgur.com/dAtHp2k.jpeg",
   "success_url": "/",
   "env": {
     "PREFIX": {
-      "description": "choose your prefix for keith. To prevent errors and confusion you must set a prefix",
+      "description": "choose your prefix for prince. To prevent errors and confusion you must set a prefix",
       "value": ".",
       "required": false
     },
