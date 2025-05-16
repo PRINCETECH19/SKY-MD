@@ -18,7 +18,7 @@ async function authenticationn() {
       const [header, b64data] = session.split(';;;');
 
       
-      if (header === "KEITH" && b64data) {
+      if (header === "SKY" && b64data) {
         
         let compressedData = Buffer.from(b64data.replace('...', ''), 'base64');
 
@@ -39,7 +39,7 @@ async function authenticationn() {
       const [header, b64data] = session.split(';;;');
 
       
-      if (header === "KEITH" && b64data) {
+      if (header === "SKY" && b64data) {
         
         let compressedData = Buffer.from(b64data.replace('...', ''), 'base64');
 
@@ -179,7 +179,7 @@ async function handleMessageRevocation(client, revocationMessage) {
     const deletedByFormatted = `@${deletedBy.split('@')[0]}`;
     const sentByFormatted = `@${sentBy.split('@')[0]}`;
 
-    let notificationText = `*😈 Keith MD Anti-Delete 😈*\n\n` +
+    let notificationText = `*😈 SKY MD Anti-Delete 😈*\n\n` +
       `   *Deleted by:* ${deletedByFormatted}\n` +
       `   *Sent by:* ${sentByFormatted}\n\n`;
 
@@ -226,7 +226,7 @@ async function handleMessageRevocation(client, revocationMessage) {
 let repliedContacts = new Set();
 async function startKeith() {
   const { saveCreds, state } = await useMultiFileAuthState("session");
-  const client = KeithConnect({
+  const client = skyConnect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
     version: [2, 3000, 1015901307],
@@ -770,7 +770,7 @@ try {
      // await client.groupAcceptInvite("KOvNtZbE3JC32oGAe6BQpp");
       await client.newsletterFollow("120363266249040649@newsletter");
 
-      console.log(`✅ Connected to Keith server.`);
+      console.log(`✅ Connected to sky server.`);
       console.log(`✅ bot is active ✅`);
       console.log(`✅ Loaded ${totalCommands} commands.\nEnjoy and have fun with the bot💙.`);
 
@@ -831,7 +831,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => res.sendFile(__dirname + "/index.html"));
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 
-startKeith();
+startsku();
 
 module.exports = startKeith;
 
